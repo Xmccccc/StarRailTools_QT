@@ -1,0 +1,2 @@
+# StarRailTools_QT
+None
