@@ -1,0 +1,199 @@
+[
+     {
+          "name": "launch",
+          "independent": false,
+          "img": "launch_game",
+          "text": "\u70b9\u51fb\u8fdb\u5165",
+          "actions": {
+               "launch": "main_intf"
+          }
+     },
+     {
+          "name": "main_map",
+          "independent": true,
+          "img": "i_main_map",
+          "actions": {
+               "esc": "phone"
+          }
+     },
+     {
+          "name": "continue",
+          "independent": false,
+          "img": "i_continue",
+          "text": "\u7a7a\u767d",
+          "actions": {
+               "continue": "l_intf"
+          }
+     },
+     {
+          "name": "prompt",
+          "independent": false,
+          "img": "i_prompt",
+          "text": "\u63d0\u793a",
+          "actions": {
+               "confirm": "l_intf",
+               "cancel": "l_intf"
+          }
+     },
+     {
+          "name": "phone",
+          "independent": true,
+          "img": "i_phone",
+          "actions": {
+               "esc": "main_map",
+               "entrust": "entrust01"
+          }
+     },
+     {
+          "name": "phone",
+          "img": [
+               "i_phone01",
+               "i_phone02"
+          ],
+          "independent": true,
+          "target_intf": [],
+          "element_name": [
+               "esc01",
+               "entrust",
+               "friends",
+               "email",
+               "roam_visa",
+               "achievement",
+               "guide"
+          ]
+     },
+     {
+          "name": "entrust01",
+          "img": [
+               "i_entrust",
+               "i_entrust01"
+          ],
+          "independent": false,
+          "target_intf": [
+               "phone",
+               "entrust02"
+          ],
+          "element_name": [
+               "esc04",
+               "one_click_collect02"
+          ]
+     },
+     {
+          "name": "entrust02",
+          "img": [
+               "i_entrust02"
+          ],
+          "independent": false,
+          "target_intf": [
+               "entrust01"
+          ],
+          "element_name": [
+               "dispatched_again"
+          ]
+     },
+     {
+          "name": "friends01",
+          "img": [
+               "i_friends01"
+          ],
+          "independent": false,
+          "target_intf": [
+               "phone",
+               "friends0101"
+          ],
+          "element_name": [
+               "esc04",
+               "friend_request"
+          ]
+     },
+     {
+          "name": "friends0101",
+          "img": [
+               "i_friends0101"
+          ],
+          "independent": false,
+          "target_intf": [
+               "friends01"
+          ],
+          "element_name": [
+               "esc02",
+               "agree01"
+          ]
+     },
+     {
+          "name": "email",
+          "img": [
+               "i_email"
+          ],
+          "independent": true,
+          "target_intf": [
+               "phone",
+               "continue",
+               "prompt01"
+          ],
+          "element_name": [
+               "esc04",
+               "all_collect02",
+               "delete_read"
+          ]
+     },
+     {
+          "name": "roam_visa01",
+          "img": [
+               "i_roam_visa01"
+          ],
+          "independent": false,
+          "target_intf": [
+               "phone"
+          ],
+          "element_name": [
+               "esc04"
+          ]
+     },
+     {
+          "name": "achievement01",
+          "img": [
+               "i_achievement01"
+          ],
+          "independent": true,
+          "target_intf": [
+               "phone",
+               "achievement02"
+          ],
+          "element_name": [
+               "esc04",
+               "red_dot_tips01"
+          ]
+     },
+     {
+          "name": "achievement02",
+          "img": [
+               "i_achievement02"
+          ],
+          "independent": true,
+          "target_intf": [
+               "achievement01",
+               "continue"
+          ],
+          "element_name": [
+               "esc03",
+               "collect02"
+          ]
+     },
+     {
+          "name": "guide01",
+          "img": [
+               "i_guide01"
+          ],
+          "independent": false,
+          "target_intf": [
+               "last_independent_intf",
+               "continue"
+          ],
+          "element_name": [
+               "esc03",
+               "collect01",
+               "daily_reward"
+          ]
+     }
+]
